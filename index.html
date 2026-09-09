@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roshdy Nehru — Senior Flutter Developer</title>
+    <meta
+      name="description"
+      content="Roshdy Nehru — Senior Flutter Developer with 4+ years shipping 12+ production apps across fintech, real estate, events and utilities. Leading mobile teams, mentoring, and shipping payments at scale."
+    />
+    <link rel="icon" type="image/png" href="assets/rn-logo-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient full-page gem field -->
+    <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Scroll progress HUD -->
+    <div id="progress-bar"></div>
+
+    <!-- Nav -->
+    <div class="nav-wrap">
+      <nav>
+        <a href="#home" class="logo" aria-label="Roshdy Nehru — home">
+          <img src="assets/rn-logo-icon.png" alt="Roshdy Nehru" />
+          <span class="logo-tag">RN</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="https://nehrujr.medium.com" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="#contact" class="nav-cta">Say hello</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span>Cairo, Egypt · open to new builds</div>
+        <h1>Turning ideas into <span class="grad">apps people actually enjoy.</span></h1>
+        <p>
+          I'm Roshdy — a Senior Flutter Developer who's spent four years shipping
+          polished apps for fintech, real estate, fitness and events, and now leads
+          a mobile team doing the same. Drag the logo, spin it around. It's the same
+          care I put into every screen.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9Z"/><path d="M11 3 8 9l4 12 4-12-3-6"/><path d="M2 9h20"/></svg>
+            Open the vault
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fa-regular fa-paper-plane"></i>
+            Start a project
+          </a>
+        </div>
+        <div class="stat-strip">
+          <div class="stat-chip"><strong>12+</strong><span>Apps shipped</span></div>
+          <div class="stat-chip"><strong>4</strong><span>Years in Flutter</span></div>
+          <div class="stat-chip"><strong>Senior</strong><span>Mobile Developer @ ADVEC</span></div>
+        </div>
+      </div>
+
+      <div class="hero-gem-stage">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="gem-hint"><i class="fa-solid fa-hand"></i>drag to spin</div>
+      </div>
+
+      <div class="scroll-cue"><span></span>scroll</div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="dot"></span>Character sheet</div>
+        <h2>The developer behind the builds</h2>
+        <p>Four years, 12+ shipped apps, one running obsession with getting the details right.</p>
+      </div>
+
+      <div class="sheet">
+        <div class="sheet-portrait reveal">
+          <div class="gem-frame">
+            <div class="inner"><img src="assets/avatar.jpg" alt="Roshdy Nehru" /></div>
+          </div>
+          <div class="level-badge">Lvl. 4 · Senior Flutter Dev</div>
+        </div>
+
+        <div class="sheet-text">
+          <div class="reveal">
+            <p>
+              I build cross-platform apps end to end — from the Flutter UI down to the
+              payment flow and the backend that holds it all together. My apps have
+              handled electricity bills, stock trades, event tickets and personal
+              training plans, which means I've had to get comfortable with a lot of
+              different problems: real-time data, six different local and regional
+              payment gateways, offline storage, live location tracking.
+            </p>
+        
+          </div>
+
+          <div class="stat-wheel reveal">
+            <div class="stat-wheel-title">Skill inventory</div>
+            <div class="skill-groups">
+              <div class="skill-group" style="--sg-color: var(--violet)">
+                <h4>Mobile craft</h4>
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span>React Native</span><span>Kotlin / Jetpack Compose (exploring)</span><span>UIKit / Swift (basics)</span>
+                </div>
+              </div>
+              <div class="skill-group" style="--sg-color: var(--sapphire)">
+                <h4>State &amp; architecture</h4>
+                <div class="tags">
+                  <span>BLoC</span><span>Cubit</span><span>GetX</span><span>Provider</span><span>Redux</span>
+                </div>
+              </div>
+              <div class="skill-group" style="--sg-color: var(--mint)">
+                <h4>Backend &amp; integrations</h4>
+                <div class="tags">
+                  <span>REST APIs</span><span>GraphQL</span><span>Node.js (learning)</span><span>Firebase Auth / FCM</span><span>Crashlytics</span><span>Sentry</span><span>Socket.IO</span>
+                </div>
+              </div>
+              <div class="skill-group" style="--sg-color: var(--pink)">
+                <h4>Payments &amp; localization</h4>
+                <div class="tags">
+                  <span>Paymob</span><span>Fawry</span><span>MCB</span><span>Tamara</span><span>Kashier</span><span>Cybersource</span><span>AR / EN / FR</span>
+                </div>
+              </div>
+              <div class="skill-group" style="--sg-color: var(--citrine)">
+                <h4>CI/CD &amp; tooling</h4>
+                <div class="tags">
+                  <span>Git</span><span>GitHub Actions</span><span>Fastlane</span><span>Xcode Cloud</span><span>Firebase App Distribution</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience — The Quest Log -->
+    <section id="experience">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="dot"></span>Career campaign</div>
+        <h2>The quest log</h2>
+        <p>Four years, six roles, one steady climb from intern to team lead.</p>
+      </div>
+
+      <div class="quest-log" id="quest-log">
+        <!-- entries injected by app.js from EXPERIENCE data -->
+      </div>
+    </section>
+
+    <!-- Projects — The Vault -->
+    <section id="projects">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="dot"></span>11 gems collected</div>
+        <h2>The vault</h2>
+        <p>Every app below is live, shipped, and used by real people today.</p>
+      </div>
+
+      <div class="vault-grid" id="vault-grid">
+        <!-- cards injected by app.js from project data, keeps markup + data in one place -->
+      </div>
+    </section>
+
+    <!-- Certifications — The Trophy Case -->
+    <section id="certifications">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="dot"></span>3 credentials, always growing</div>
+        <h2>The trophy case</h2>
+        <p>Structured learning to back up the shipped apps — every badge below is verified and public.</p>
+      </div>
+
+      <div class="cert-grid" id="cert-grid">
+        <!-- cards injected by app.js from CERTIFICATIONS data -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="dot"></span>Send a signal</div>
+        <h2>Let's build the next one</h2>
+        <p>Got an app that needs shipping? I'd love to hear what you're building.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's talk</h3>
+          <p>
+            I'm always up for a new build — whether that's a fresh Flutter app from
+            scratch or leveling up something that already exists. Reach me directly,
+            or use the form.
+          </p>
+          <div class="contact-item">
+            <span class="ic"><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:roshdy.nehru@outlook.com">Roshdy.Nehru@outlook.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="ic"><i class="fa-solid fa-phone"></i></span>
+            <span>+20 109 820 8809</span>
+          </div>
+          <div class="contact-item">
+            <span class="ic"><i class="fa-solid fa-location-dot"></i></span>
+            <span>Cairo, Egypt</span>
+          </div>
+          <div class="contact-item">
+            <span class="ic"><i class="fa-brands fa-linkedin-in"></i></span>
+            <a href="https://www.linkedin.com/in/rnehru74" target="_blank" rel="noopener">linkedin.com/in/RNehru74</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xwpogvdv" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <input type="hidden" name="_replyto" value="roshdynehru@outlook.com" />
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send message
+          </button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-row">
+        <a href="https://nehrujr.medium.com" target="_blank" rel="noopener" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+        <a href="https://github.com/NehruJr" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rnehru74/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/rnehru74/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2026 Roshdy Nehru. Built with Three.js.</p>
+    </footer>
+
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
